@@ -30,8 +30,9 @@ you can setup pyenv (py) using a single line
 [wine](https://www.winehq.org/ "https://www.winehq.org/") to run windows executable in linux
 
 ### android
-* [anbox](https://forum.manjaro.org/t/running-android-applications-on-arch-using-anbox/53332 'to install anbox') Anbox is a free and open-source compatibility layer that aims to allow mobile applications and mobile games developed for Android to run on GNU/Linux distributions.
-* [AndroidStudio]() you can install by [this way](https://linuxconfig.org/how-to-install-android-studio-on-manjaro-18-linux) or simply `sudo pacman -Syu androidstudio`
+* [anbox](https://anbox.io/ "https://anbox.io/") Anbox is a free and open-source compatibility layer that aims to allow mobile applications and mobile games developed for Android to run on GNU/Linux distributions.
+> you can install it [this way](https://forum.manjaro.org/t/running-android-applications-on-arch-using-anbox/53332 "to install anbox")  
+* [AndroidStudio](https://developer.android.com/studio "https://developer.android.com/studio") you can install by [this way](https://linuxconfig.org/how-to-install-android-studio-on-manjaro-18-linux "to install AndroidStudio") or simply `sudo pacman -Syu androidstudio`
 > for more details about moving apps to AVD, etc,. [see](/man-manjaro/AndroidStudio)
 
 ## To backup and restore whole system 
@@ -39,5 +40,6 @@ use timeshift (recommended)
 `sudo pacman -Syu timeshift`
 
 ## Extra tools
-* [buildozer](/man-manjaro/buildozer) Buildozer is a tool for creating application packages easily, using [python](https://www.python.org/ "https://www.python.org/") and [kivy](https://kivy.org "https://kivy.org")  
+* [buildozer](https://github.com/kivy/buildozer "github") Buildozer is a tool for creating application packages easily, using [python](https://www.python.org/ "https://www.python.org/") and [kivy](https://kivy.org "https://kivy.org")  
+> to setup and configure buildozer [see](/man-manjaro/buildozer)
 * *comming_soon... :smiley:*
