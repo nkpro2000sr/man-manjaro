@@ -43,3 +43,6 @@ use timeshift (recommended)
 * [buildozer](https://github.com/kivy/buildozer "github") Buildozer is a tool for creating application packages easily, using [python](https://www.python.org/ "https://www.python.org/") and [kivy](https://kivy.org "https://kivy.org")  
 > to setup and configure buildozer [see](/man-manjaro/buildozer)
 * *comming_soon... :smiley:*
+
+
+<script data-ad-client="ca-pub-4586260317371453" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
