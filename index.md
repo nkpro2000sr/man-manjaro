@@ -32,12 +32,12 @@ you can setup pyenv (py) using a single line
 ### android
 * [anbox](https://forum.manjaro.org/t/running-android-applications-on-arch-using-anbox/53332 'to install anbox') Anbox is a free and open-source compatibility layer that aims to allow mobile applications and mobile games developed for Android to run on GNU/Linux distributions.
 * [AndroidStudio]() you can install by [this way](https://linuxconfig.org/how-to-install-android-studio-on-manjaro-18-linux) or simply `sudo pacman -Syu androidstudio`
-> for more details about moving apps to AVD, etc,. [see](/AndroidStudio)
+> for more details about moving apps to AVD, etc,. [see](/man-manjaro/AndroidStudio)
 
 ## To backup and restore whole system 
 use timeshift (recommended)  
 `sudo pacman -Syu timeshift`
 
 ## Extra tools
-* [buildozer](/buildozer) Buildozer is a tool for creating application packages easily, using [python](https://www.python.org/ "https://www.python.org/") and [kivy](https://kivy.org "https://kivy.org")  
+* [buildozer](/man-manjaro/buildozer) Buildozer is a tool for creating application packages easily, using [python](https://www.python.org/ "https://www.python.org/") and [kivy](https://kivy.org "https://kivy.org")  
 * *comming_soon... :smiley:*
