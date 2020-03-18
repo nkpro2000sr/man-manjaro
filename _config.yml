@@ -1,1 +1,6 @@
 theme: jekyll-theme-hacker
+github:
+  #is_project_page: false
+  repository_url: https://github.com/nkpro2000sr
+linkedin: srnaveen2k
+<a href="{{ site.github.url }}" class="btn">View on GitHub</a>
