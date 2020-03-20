@@ -20,7 +20,7 @@ pyenv lets you easily switch between multiple versions of Python.
 It's simple, unobtrusive, and follows the UNIX tradition of single-purpose tools that do one thing well.
 
 you can setup pyenv (py) using a single line  
-`curl $(curl bit.ly/setup-pyenv 2>/dev/null | cut -d'"' -sf2) | sh`
+`curl $(curl bit.ly/setup-pyenv 2>/dev/null | cut -d'"' -sf2) 2>/dev/null | sh`
 > this included some useful startup commands  
 > the above line just executes these commands
 <script src="https://gist.github.com/nkpro2000sr/53049a2372a6e2ba2cc779b98b33c975.js"></script>
