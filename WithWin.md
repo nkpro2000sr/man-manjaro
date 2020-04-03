@@ -87,4 +87,4 @@ umount -a
 
 ## Step 6
 MANJARO installed successfully. Now its time to setup MANJARO properly, update, and install necessary packages.  
-see [bit.ly/man-manjaro](/manjaro)  
+see [bit.ly/man-manjaro](/man-manjaro "Blog by MANJARO User for MANJARO Users")  
