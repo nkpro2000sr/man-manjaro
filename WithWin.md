@@ -31,8 +31,7 @@ Download MANJARO ISO file from [this page](https://manjaro.org/download/ "Offici
 Now your USE Flash Disk is ready to BOOT :]  
 1. Plug your USB Flash Disk and Restart your PC.  
 2. Probably it will now show window with 'Welcome to Manjaro' title.  
-> ### If Not follow the steps below:(
-> Comming
->   Soon :|
+> ### If Not :(
+> It need some modifications in BIOS. (see [this](/man-manjaro/EditBIOS2Boot "to solve not booting from USB"))  
 3. Now select 'Boot: Manjaro.x86_64 .\*' to boot into live-environment.  
 4. .....
