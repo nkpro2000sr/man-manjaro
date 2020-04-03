@@ -40,6 +40,7 @@ Now we are good to install MANJARO to one of the partision ^-^
 1. This time also we have a window with 'Welcome to Manjaro' title and 'Launch installer' button.  
 2. Click 'Launch installer' button, set Location, then Keyboard (choose English US - Default).  
 3. In Partitions section:  
+
 > i) create a partision for root:  
 >> Size = most of space allocated for Linux  
 >> Type = ext4; Mount Point = /; Flag = root
@@ -51,6 +52,7 @@ Now we are good to install MANJARO to one of the partision ^-^
 > iii) if installer asked to create partision for /boot/efi:  
 >> Size = Max 500 MB  
 >> Type = fat32; Mount Point = /boot/efi; Flag = boot  
+
 4. Enter username and password  
 5. press INSTALL  
 6. shutdown, unplug USB Flash Disk, and start.  
