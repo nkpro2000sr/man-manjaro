@@ -1,3 +1,5 @@
+# Ease MANJARO (ARCH Linux) Installation and Setup
+
 ## To update mirror list for faster pacman ;)
 `sudo pacman-mirrors -c India`
 > `reboot` to update changes
@@ -20,10 +22,12 @@ pyenv lets you easily switch between multiple versions of Python.
 It's simple, unobtrusive, and follows the UNIX tradition of single-purpose tools that do one thing well.
 
 you can setup pyenv (py) using a single line  
-`curl $(curl bit.ly/setup-pyenv 2>/dev/null | cut -d'"' -sf2) 2>/dev/null | sh`
+`curl -L bit.ly/setup-pyenv | sh`
 > this included some useful startup commands  
 > the above line just executes these commands
-<script src="https://gist.github.com/nkpro2000sr/53049a2372a6e2ba2cc779b98b33c975.js"></script>
+<script src="https://gist.github.com/nkpro2000sr/53049a2372a6e2ba2cc779b98b33c975.js"></script>  
+>> If you are using [Zsh](https://www.zsh.org/ "Zsh is a shell designed for interactive use")  
+>> change ~/.bashrc to ~/.zshrc *(or)* manually copy paste '#pyenv{[\s\S]\*#pyenv}' in .bashrc into ~/.zshrc  
 
 ### windows
 `sudo pacman -Syu wine`  
