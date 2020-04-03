@@ -21,18 +21,19 @@ Download MANJARO ISO file from [this page](https://manjaro.org/download/ "Offici
 
 * In Windows:
 > 1_ Download [Rufus](https://github.com/pbatard/rufus "Create bootable USB drives the easy way ") from [https://rufus.ie/](https://rufus.ie/ "Home Page") *(or)* [Github Releases](https://github.com/pbatard/rufus/releases "Up To Date")  
-> 2_ Run it if you downloaded *Portable Version* otherwise Install it.  
+> 2_ Run it if you downloaded *Portable Version* otherwise Install and Run it.  
 > 3_ Select your USB Flash Disk in 'Device' drop down list box.  
 > 4_ Select Manjaro iso file in 'Boot selection' drop down list box.  
-> 5_ Then click 'START' Button *(only once)*.
+> 5_ Then click 'START' Button *(only once)*.  
 > 6_ After done unplug your USE Flash Disk.  
 
 ## Step 3
 Now your USE Flash Disk is ready to BOOT :]  
 1_ Plug your USB Flash Disk and Restart your PC.  
 2_ Probably it will now show window with 'Welcome to Manjaro' title.  
-> ### If Not :(
+> ### If Not :(  
 > It need some modifications in BIOS. (see [this](/man-manjaro/EditBIOS2Boot "to solve not booting from USB"))  
+
 3_ Now select 'Boot: Manjaro.x86_64 .\*' to boot into live-environment.  
 
 ## Step 4
@@ -55,13 +56,13 @@ Now we are good to install MANJARO to one of the partision ^-^
 
 4_ Enter username and password  
 5_ press INSTALL  
-6_ shutdown, unplug USB Flash Disk, and start.  
+6_ After installation completed shutdown, unplug USB Flash Disk, and start.  
 
 ## Step 5
 * If grub shows both MANJARO and Windows, then Installation done successfully :) (see [this](/man-manjaro) for ease setup)  
 * If grub shows only MANJARO, then we have to update grub :|  
 > Boot Manjaro, goto terminal, enter `sudo update-grub`. Now grub will show both MANJARO and Windows.  
-* If grub stuck or grub rescue appears. It is due to no grub failure :(  
+* If grub stuck or grub rescue appears. It is due to no proper grub config available :(  
 > 1_ This time we need the Bootable USB Flash Disk we used for installation.  
 > 2_ Shutdown, Plugin USB Flash Disk, start.  
 > 3_ Execute this commands in live boot.  
