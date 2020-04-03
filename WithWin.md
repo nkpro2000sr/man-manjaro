@@ -20,7 +20,7 @@ Download MANJARO ISO file from [this page](https://manjaro.org/download/ "Offici
 > 6_ Now unplug your USE Flash Disk.  
 
 * In Windows:
-> 1_ Download [Rufus](https://github.com/pbatard/rufus "Create bootable USB drives the easy way ") from [https://rufus.ie/](https://rufus.ie/ "Home Page") *(or)* [Github Releases](https://github.com/pbatard/rufus/releases "Up To Date")  
+> 1_ Download [Rufus](https://github.com/pbatard/rufus "Create bootable USB drives the easy way ") from [https://rufus.ie/](https://rufus.ie/ "Home Page") *(or)* [Github Releases](https://github.com/pbatard/rufus/releases "Up To Date").  
 > 2_ Run it if you downloaded *Portable Version* otherwise Install and Run it.  
 > 3_ Select your USB Flash Disk in 'Device' drop down list box.  
 > 4_ Select Manjaro iso file in 'Boot selection' drop down list box.  
@@ -65,7 +65,7 @@ Now we are good to install MANJARO to one of the partision ^-^
 * If grub stuck or grub rescue appears. It is due to no proper grub config available :(  
 > 1_ This time we need the Bootable USB Flash Disk we used for installation.  
 > 2_ Shutdown, Plugin USB Flash Disk, start.  
-> 3_ Execute this commands in live boot.  
+> 3_ Execute this commands in live boot. Replace \<PATH> by path of main partition created for MANJARO root.  
 ```bash
 su
 mount <PATH> /mnt
@@ -80,7 +80,8 @@ grub-mkconfig -o /boot/grub/grub.cfg
 grub-install <PATH>
 exit
 umount -a
-```
+```  
+
 > 4_ Shutdown, Unplug USB Flash Disk, start.  
 > 5_ Boot Manjaro, goto terminal, enter `sudo update-grub`. Now grub will show both MANJARO and Windows.  
 
