@@ -42,10 +42,12 @@ Now we are good to install MANJARO to one of the partision ^-^
 3. In Partitions section:  
 > i) create a partision for root:  
 >> Size = most of space allocated for Linux  
->> Type = ext4; Mount Point = /; Flag = root  
+>> Type = ext4; Mount Point = /; Flag = root
+
 > ii) create a partision for swap (virtual RAM):  
 >> Size = mostly 3GB  
->> Type = linuxswap; Flag = swap  
+>> Type = linuxswap; Flag = swap
+
 > iii) if installer asked to create partision for /boot/efi:  
 >> Size = Max 500 MB  
 >> Type = fat32; Mount Point = /boot/efi; Flag = boot  
@@ -58,9 +60,9 @@ Now we are good to install MANJARO to one of the partision ^-^
 * If grub shows only MANJARO, then we have to update grub :|  
 > Boot Manjaro, goto terminal, enter `sudo update-grub`. Now grub will show both MANJARO and Windows.  
 * If grub stuck or grub rescue appears. It is due to no grub failure :(  
-> This time we need the Bootable USB Flash Disk we used for installation.  
-> Shutdown, Plugin USB Flash Disk, start.  
-> Execute this commands in live boot.  
+> 1. This time we need the Bootable USB Flash Disk we used for installation.  
+> 2. Shutdown, Plugin USB Flash Disk, start.  
+> 3. Execute this commands in live boot.  
 ```bash
 su
 mount <PATH> /mnt
@@ -76,8 +78,8 @@ grub-install <PATH>
 exit
 umount -a
 ```
-> Shutdown, Unplug USB Flash Disk, start.  
-> Boot Manjaro, goto terminal, enter `sudo update-grub`. Now grub will show both MANJARO and Windows.  
+> 4. Shutdown, Unplug USB Flash Disk, start.  
+> 5. Boot Manjaro, goto terminal, enter `sudo update-grub`. Now grub will show both MANJARO and Windows.  
 
 ## Step 6
 MANJARO installed successfully. Now its time to setup MANJARO properly, update, and install necessary packages.  
