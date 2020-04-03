@@ -60,21 +60,21 @@ Now we are good to install MANJARO to one of the partision ^-^
 * If grub stuck or grub rescue appears. It is due to no grub failure. :(
 > This time we need the Bootable USB Flash Disk we used for installation.
 > Shutdown, Plugin USB Flash Disk, start.
-> ```
-  su
-  mount <PATH> /mnt
-  mount -o bind /dev /mnt/dev
-  mount -o bind /dev/pts /mnt/dev/pts
-  mount -o bind /proc /mnt/proc
-  mount -o bind /run /mnt/run
-  mount -o bind /sys /mnt/sys
-  chroot /mnt
-  cd /boot/grub
-  grub-mkconfig -o /boot/grub/grub.cfg
-  grub-install <PATH>
-  exit
-  umount -a
-  ```
+```bash
+su
+mount <PATH> /mnt
+mount -o bind /dev /mnt/dev
+mount -o bind /dev/pts /mnt/dev/pts
+mount -o bind /proc /mnt/proc
+mount -o bind /run /mnt/run
+mount -o bind /sys /mnt/sys
+chroot /mnt
+cd /boot/grub
+grub-mkconfig -o /boot/grub/grub.cfg
+grub-install <PATH>
+exit
+umount -a
+```
 > Shutdown, Unplug USB Flash Disk, start.  
 > Boot Manjaro, goto terminal, enter `sudo update-grub`. Now grub will show both MANJARO and Windows.  
 
