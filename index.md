@@ -8,7 +8,7 @@
 `sudo pacman -Syyuu` to update and upgrade all packages including system packages.
 
 ## To install earlier versions of package
-1. Download package from https://archive.archlinux.org/packages/   
+1. Download package from [https://archive.archlinux.org/packages/](https://archive.archlinux.org/packages/ "Arch Package Archive")
 2. Update it `sudo pacman -U path/to/downloaded/package.pkg.tar.xz`  
 
 ## install some useful packages
