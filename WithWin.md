@@ -46,7 +46,7 @@ Now we are good to install MANJARO to one of the partision ^-^
 >> Size = most of space allocated for Linux  
 >> Type = ext4; Mount Point = /; Flag = root
 
-> ii) create a partision for swap (virtual RAM):  
+> ii) create a partision for [swap](/man-manjaro/Swap) (virtual RAM):  
 >> Size = mostly 3GB  
 >> Type = linuxswap; Flag = swap
 

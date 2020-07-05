@@ -7,11 +7,22 @@
 ## Update and Upgrade 
 `sudo pacman -Syyuu` to update and upgrade all packages including system packages.
 
+## To install earlier versions of package
+1. Download package from https://archive.archlinux.org/packages/   
+2. Update it `sudo pacman -U path/to/downloaded/package.pkg.tar.xz`  
+
 ## install some useful packages
 `sudo pacman -Syu pacaur` to get packages from [Arch User Repository](https://aur.archlinux.org/ "https://aur.archlinux.org/")  
-`sudo pacman -Syu git` [git](https://git-scm.com/ "https://git-scm.com/") to get packages from open source repos like github,etc,.   
+`sudo pacman -Syu snapd` [snap](https://snapcraft.io/ "One build for all Linux and IoT") cross-distribution package manager  
+> also try [FLATPAK](https://flatpak.org/ "Linux cross-distribution application sandboxing and distribution framework") 
+and [AppImage](https://appimage.org/ "Download an application, make it executable, and run! No need to install")
 
-`sudo pacman -Syu docker` [docker](https://www.docker.com/ "https://www.docker.com/") to use containers (a form of operating system virtualization)  
+`pacaur -S stacer` [stacer](https://oguzhaninan.github.io/Stacer-Web/ "https://github.com/oguzhaninan/Stacer") for system optimizing and monitoring  
+`sudo pacman -Syu bleachbit htop powertop iftop iotop`  
+
+`sudo pacman -Syu git` [git](https://git-scm.com/ "https://git-scm.com/") to get packages from open source repos like github,etc,.
+
+`sudo pacman -Syu docker` [docker](https://www.docker.com/ "https://www.docker.com/") to use containers (a form of operating system virtualization)
 
 `sudo pacaur -Syu apt --noedit`  
 yes, you can use apt in manjaro !  
@@ -43,10 +54,43 @@ you can setup pyenv (py) using a single line
 use timeshift (recommended)  
 `sudo pacman -Syu timeshift`
 
+## To apply system themes for all apps
+While changing theme or style in Appearance section in System Settings,
+some apps won't change.
+
+To solve this  
+You need to set your GTK theme. It is in System Settings > Application Style > GNOME/GTK Application Style
+
+This is because they are gnome/gtk apps, we have to set theme for them seperatly.
+
+Also for browsers we have to make some configurations.
+
+1. Chromium : enabled the use of gtk3 theme
+2. FireFox : 
+    1. In Firefox, go to the about:config page (type about:config in the address bar).
+    2. Click through the warning dialog.
+    3. Right-click anywhere and select New > String.
+    4. For the preference name, type widget.content.gtk-theme-override.
+    5. For the value, type Breath2-Dark.
+    6. Close the about:config tab.
+    7. Close and reopen the Firefox application.
+
+> For full dark experience in browser, use [darkreader](https://darkreader.org/ "Extension for Browser")
+
+## Autostart
+[see this](https://wiki.archlinux.org/index.php/XDG_Autostart "in wiki.archlinux")
+
 ## Extra tools
 * [buildozer](https://github.com/kivy/buildozer "github") Buildozer is a tool for creating application packages easily, using [python](https://www.python.org/ "https://www.python.org/") and [kivy](https://kivy.org "https://kivy.org")  
 > to setup and configure buildozer [see](/man-manjaro/buildozer)
+* [debtap](https://github.com/helixarch/debtap "DEB To Arch \(Linux\) Package") A script for converting .deb packages into Arch Linux packages, focused on accuracy.
+> then install it using pacman `sudo pacman -U path/to/arch/pak`
+* [alien](https://github.com/mildred/alien "Package converter .many -> .deb") A program that converts between the rpm, dpkg, stampede slp, and slackware tgz file formats.
+> If you want to use a package from another distribution than the one you have installed on your system, you can use alien to convert it to your preferred package format and install it.
+* [LDD](https://linoxide.com/linux-command/ldd-command-examples-linux/ "List Dynamic Dependencies") To find missing shared library dependencies.
+> After found missing librarys
+> * download library and paste it in appropriate locations eg:`/usr/lib/`
+> * (or) find which package has the required and install it
+>> To get info and list the files owned by package  
+>> `pacman -Qil <package-name>`
 * *comming_soon... :smiley:*
-
-
-<script data-ad-client="ca-pub-4586260317371453" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
