@@ -93,4 +93,12 @@ Also for browsers we have to make some configurations.
 > * (or) find which package has the required and install it
 >> To get info and list the files owned by package  
 >> `pacman -Qil <package-name>`
+* [SoundWire](http://georgielabs.net/ "HomePage") To Stream Audio from Your Linux PC to Android
+> `pacaur -S soundwire` to install SoundWire from ArchlinuxUserRepository  
+> dependencies: `sudo pacman -Syu pavucontrol`  
+>> If you find the GUI claims the Android device is connected, but you’re not hearing any sound on your mobile device,
+>> go back to the SoundWire Server GUI and click on the Open PulseAudio Volume Control button.
+>> In this new window, go to the Recording tab and make sure Monitor of Built-In Audio Analog Stereo is selected from the Alsa Capture from drop-down.
+>> Once that is selected, the sound should start spilling from your Android device.
+>>> [detailed how to do](https://www.linux.com/topic/desktop/how-stream-audio-your-linux-pc-android/ "more details")
 * *comming_soon... :smiley:*
