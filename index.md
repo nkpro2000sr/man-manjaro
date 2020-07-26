@@ -23,7 +23,14 @@
 1. Download package from [https://archive.archlinux.org/packages/](https://archive.archlinux.org/packages/ "Arch Package Archive")
 2. Update it `sudo pacman -U path/to/downloaded/package.pkg.tar.xz`  
 
-## install some useful packages
+## frequent pacman errors
+1. "unable to lock database” or “failed to synchronize any databases”
+   > `sudo rm /var/lib/pacman/db.lck`
+2. "invalid or corrupted package:"
+   > `sudo find /var/cache/pacman/pkg/ -iname "*.part" -exec rm {} ;`
+   > `sudo pacman -Syyu`
+
+## Install some useful packages
 `sudo pacman -Syu pacaur` to get packages from [Arch User Repository](https://aur.archlinux.org/ "https://aur.archlinux.org/")  
 `sudo pacman -Syu snapd` [snap](https://snapcraft.io/ "One build for all Linux and IoT") cross-distribution package manager  
 > also try [FLATPAK](https://flatpak.org/ "Linux cross-distribution application sandboxing and distribution framework") 
