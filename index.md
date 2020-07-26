@@ -1,40 +1,16 @@
 # Ease MANJARO (ARCH Linux) Installation and Setup
 
-<div align="right">
-    <div class="nktooltip">
-        <img src="https://raw.githubusercontent.com/nkpro2000sr/man-manjaro/master/_static/img/pwm.png" height="50" width="150">
-        <div class="nkbottom">
-            <h3>PrimeOS | Manjaro | Windows</h3>
-            <p><strong> Install manjaro <a href="https://nkpro2000sr.github.io/man-manjaro/WithWin">/WithWin</a>dows and
-            <a href="https://nkpro2000sr.github.io/man-manjaro/AlsoPrime">/AlsoPrime</a>OS
-            </strong></p>
-        </div>
+<details>
+    <summary>
+        <img src="https://raw.githubusercontent.com/nkpro2000sr/man-manjaro/master/_static/img/pwm.png" align="right" height="50" width="150"
+             title="Install manjaro '/WithWin'dows and '/AlsoPrime'OS">
+    </summary>
+    <div align="right"> <br>
+    <h3>PrimeOS | Manjaro | Windows</h3>
+    <p>Install manjaro <a href="https://nkpro2000sr.github.io/man-manjaro/WithWin">/WithWin</a>dows and
+        <a href="https://nkpro2000sr.github.io/man-manjaro/AlsoPrime">/AlsoPrime</a>OS</p>
     </div>
-</div>
-
-<style>
-.nktooltip {
-    display:inline-block;
-    position:relative;
-    text-align:left;
-}
-
-.nktooltip .nkbottom {
-    top:150%;
-    left:-75%;
-    width:200%;
-    position:absolute;
-    display:none;
-}
-
-.nktooltip:hover .nkbottom {
-    display:block;
-}
-
-.nktooltip:active .nkbottom {
-    display:block;
-}
-</style>
+</details>
 
 ## To update mirror list for faster pacman ;)
 `sudo pacman-mirrors -c India`
