@@ -27,7 +27,7 @@
 1. "unable to lock database” or “failed to synchronize any databases”
    > `sudo rm /var/lib/pacman/db.lck`
 2. "invalid or corrupted package:"
-   > `sudo find /var/cache/pacman/pkg/ -iname "*.part" -exec rm {} ;`
+   > `sudo find /var/cache/pacman/pkg/ -iname "*.part" -exec rm {} ;`  
    > `sudo pacman -Syyu`
 
 ## Install some useful packages
