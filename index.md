@@ -53,16 +53,16 @@ It's simple, unobtrusive, and follows the UNIX tradition of single-purpose tools
 
 you can setup pyenv (py) using a single line  
 `curl -L bit.ly/setup-pyenv | sh`
+> this included some useful startup commands  
+> the above line just executes these commands
 
 <details>
 <summary></summary>
-
-> this included some useful startup commands  
-> the above line just executes these commands
 <script src="https://gist.github.com/nkpro2000sr/53049a2372a6e2ba2cc779b98b33c975.js"></script>  
+</details>
+
 >> If you are using [Zsh](https://www.zsh.org/ "Zsh is a shell designed for interactive use")  
 >> change ~/.bashrc to ~/.zshrc *(or)* manually copy paste '#pyenv{[\s\S]\*#pyenv}' in .bashrc into ~/.zshrc  
-</details>
 
 ### windows
 `sudo pacman -Syu wine`  
