@@ -32,6 +32,7 @@
 
 ## Install some useful packages
 `sudo pacman -Syu base-devel netcat` to install strings(from binutils), make, gcc, netcat, etc.,  
+
 `sudo pacman -S pacaur` to get packages from [Arch User Repository](https://aur.archlinux.org/ "https://aur.archlinux.org/")  
 `sudo pacman -S snapd` [snap](https://snapcraft.io/ "One build for all Linux and IoT") cross-distribution package manager  
 > also try [FLATPAK](https://flatpak.org/ "Linux cross-distribution application sandboxing and distribution framework") 
