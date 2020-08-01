@@ -31,19 +31,20 @@
    > `sudo pacman -Syyu`
 
 ## Install some useful packages
-`sudo pacman -Syu pacaur` to get packages from [Arch User Repository](https://aur.archlinux.org/ "https://aur.archlinux.org/")  
-`sudo pacman -Syu snapd` [snap](https://snapcraft.io/ "One build for all Linux and IoT") cross-distribution package manager  
+`sudo pacman -Syu base-devel netcat` to install strings(from binutils), make, gccc, etc.,  
+`sudo pacman -S pacaur` to get packages from [Arch User Repository](https://aur.archlinux.org/ "https://aur.archlinux.org/")  
+`sudo pacman -S snapd` [snap](https://snapcraft.io/ "One build for all Linux and IoT") cross-distribution package manager  
 > also try [FLATPAK](https://flatpak.org/ "Linux cross-distribution application sandboxing and distribution framework") 
 and [AppImage](https://appimage.org/ "Download an application, make it executable, and run! No need to install")
 
 `pacaur -S stacer` [stacer](https://oguzhaninan.github.io/Stacer-Web/ "https://github.com/oguzhaninan/Stacer") for system optimizing and monitoring  
-`sudo pacman -Syu bleachbit htop powertop iftop iotop`  
+`sudo pacman -S bleachbit htop powertop iftop iotop`  
 
-`sudo pacman -Syu git` [git](https://git-scm.com/ "https://git-scm.com/") to get packages from open source repos like github,etc,.
+`sudo pacman -S git` [git](https://git-scm.com/ "https://git-scm.com/") to get packages from open source repos like github,etc,.
 
-`sudo pacman -Syu docker` [docker](https://www.docker.com/ "https://www.docker.com/") to use containers (a form of operating system virtualization)
+`sudo pacman -S docker` [docker](https://www.docker.com/ "https://www.docker.com/") to use containers (a form of operating system virtualization)
 
-`sudo pacaur -Syu apt --noedit`  
+`sudo pacaur -S apt --noedit`  
 yes, you can use apt in manjaro !  
 > but it is still buggy :smirk:  
 
