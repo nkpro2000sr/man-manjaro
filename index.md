@@ -106,6 +106,20 @@ Also for browsers we have to make some configurations.
 ## Autostart
 [see this](https://wiki.archlinux.org/index.php/XDG_Autostart "in wiki.archlinux")
 
+## To set default brightness (set at each boot)
+just create and add below lines in '/etc/udev/rules.d/81-backlight.rules' file
+```bash
+# Set backlight level to 15 
+SUBSYSTEM=="backlight", ACTION=="add", KERNEL=="amdgpu_bl0", ATTR{brightness}="15"
+```
+you can find 'KERNEL' in '/sys/class/backlight/', which is just a directory name  
+[more info](https://wiki.archlinux.org/index.php/Backlight#Udev_rule "in wiki.archlinux")
+
+### If you can’t able to change screen brightness by keys
+1. add `GRUB_CMDLINE_LINUX="acpi_backlight=none"` line in '/etc/default/grub'
+2. `sudo update-grub`
+3. `reboot`
+
 ## Extra tools
 * [buildozer](https://github.com/kivy/buildozer "github") Buildozer is a tool for creating application packages easily, using [python](https://www.python.org/ "https://www.python.org/") and [kivy](https://kivy.org "https://kivy.org")  
 > to setup and configure buildozer [see](/man-manjaro/buildozer)
