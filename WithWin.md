@@ -28,7 +28,7 @@ Download MANJARO ISO file from [this page](https://manjaro.org/download/ "Offici
 > 6_ After done unplug your USE Flash Disk.  
 
 * In Android:
-> https://github.com/EtchDroid/EtchDroid
+> [https://github.com/EtchDroid/EtchDroid](https://github.com/EtchDroid/EtchDroid "An application to write OS images to USB drives, on Android, no root required.")
 
 ## Step 3
 Now your USE Flash Disk is ready to BOOT :]  
