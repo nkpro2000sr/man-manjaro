@@ -78,7 +78,6 @@ grub-install /dev/sdX
 exit
 exit
 ```  
-
 > 4_ Shutdown, Unplug USB Flash Disk, start.  
 > 5_ Boot Manjaro, goto terminal, enter `sudo update-grub`. Now grub will show both MANJARO and Windows.  
 
