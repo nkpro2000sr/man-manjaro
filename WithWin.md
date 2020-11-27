@@ -27,6 +27,9 @@ Download MANJARO ISO file from [this page](https://manjaro.org/download/ "Offici
 > 5_ Then click 'START' Button *(only once)*.  
 > 6_ After done unplug your USE Flash Disk.  
 
+* In Android:
+> https://github.com/EtchDroid/EtchDroid
+
 ## Step 3
 Now your USE Flash Disk is ready to BOOT :]  
 1_ Plug your USB Flash Disk and Restart your PC.  
@@ -40,7 +43,7 @@ Now your USE Flash Disk is ready to BOOT :]
 Now we are good to install MANJARO to one of the partision ^-^  
 1_ This time also we have a window with 'Welcome to Manjaro' title and 'Launch installer' button.  
 2_ Click 'Launch installer' button, set Location, then Keyboard (choose English US - Default).  
-3_ In Partitions section:  
+3_ In Partitions section:  [Detailed INFO](https://wiki.archlinux.org/index.php/Partitioning#Example_layouts "Must see")  
 
 > i) create a partision for root:  
 >> Size = most of space allocated for Linux  
@@ -65,21 +68,15 @@ Now we are good to install MANJARO to one of the partision ^-^
 * If grub stuck or grub rescue appears. It is due to no proper grub config available :(  
 > 1_ This time we need the Bootable USB Flash Disk we used for installation.  
 > 2_ Shutdown, Plugin USB Flash Disk, start.  
-> 3_ Execute this commands in live boot. Replace \<PATH> by path of main partition created for MANJARO root.  
+> 3_ Execute this commands in live boot. /dev/sdX is the disk has manjaro installed.  
 ```bash
 su
-mount <PATH> /mnt
-mount -o bind /dev /mnt/dev
-mount -o bind /dev/pts /mnt/dev/pts
-mount -o bind /proc /mnt/proc
-mount -o bind /run /mnt/run
-mount -o bind /sys /mnt/sys
-chroot /mnt
+manjaro-chroot -a # choose manjaro installed partition.
 cd /boot/grub
-grub-mkconfig -o /boot/grub/grub.cfg
-grub-install <PATH>
+grub-mkconfig -o grub.cfg
+grub-install /dev/sdX
 exit
-umount -a
+exit
 ```  
 
 > 4_ Shutdown, Unplug USB Flash Disk, start.  
