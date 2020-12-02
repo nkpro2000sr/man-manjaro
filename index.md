@@ -7,6 +7,8 @@
     </summary>
     <div align="right"> <br>
     <h3>PrimeOS | Manjaro | Windows</h3>
+    </div>
+    <div align="right">
     <p>Install manjaro <a href="https://nkpro2000sr.github.io/man-manjaro/WithWin">/WithWin</a>dows,
         <a href="https://nkpro2000sr.github.io/man-manjaro/AlsoPrime">/AlsoPrime</a>OS and
         <a href="https://nkpro2000sr.github.io/man-manjaro/AlsoKali">/AlsoKali</a></p>
