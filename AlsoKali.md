@@ -87,7 +87,7 @@ then `sudo update-grub`
 # Step 5
 Kali Live is setuped successfully. Now reboot, select Kali Live, and HACK :smiling_imp::dragon:
 
-</br></br></br>
+<br /><br /><br />
 
 ##### References:
 1. [https://www.tecmint.com/run-linux-live-images-from-hard-disk-in-linux/](https://www.tecmint.com/run-linux-live-images-from-hard-disk-in-linux/)
