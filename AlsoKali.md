@@ -82,7 +82,8 @@ submenu 'Kali Linux' --class kali --class gnu-linux --class gnu --class os --gro
 ```
 then `sudo update-grub`
 
-> replace 'kali-linux-2020.2-live-amd64.iso' by your ISO file name.
+> Replace 'kali-linux-2020.2-live-amd64.iso' by your ISO file name.  
+> **Check your main partition lable is 'linux'. If not change it or edit /etc/grub.d/40_custom**
 
 # Step 5
 Kali Live is setuped successfully. Now reboot, select Kali Live, and HACK :smiling_imp::dragon:
