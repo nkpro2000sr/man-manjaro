@@ -144,4 +144,7 @@ you can find 'KERNEL' in '/sys/class/backlight/', which is just a directory name
 >> In this new window, go to the Recording tab and make sure Monitor of Built-In Audio Analog Stereo is selected from the Alsa Capture from drop-down.
 >> Once that is selected, the sound should start spilling from your Android device.
 >>> [detailed how to do](https://www.linux.com/topic/desktop/how-stream-audio-your-linux-pc-android/ "more details")
+* [ARChon](https://archon-runtime.github.io/ "archon-runtime.github.io") Run Android Apps in Chrome in OS X, Linux and Windows.
+> `pacaur -S archon chromeos-apk-git`
+>> [chromeos-apk](https://github.com/vladikoff/chromeos-apk#usage "repo") generates chrome extension from apk file.
 * *comming_soon... :smiley:*
